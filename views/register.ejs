@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Chat App</title>
+</head>
+<body>
+    
+    <div class="regs">
+        <div class="header">
+            <h3>DeChatie</h3>
+        </div>
+
+        <div class="main">
+            <h4><a href="/"> << Home </a> </h4>
+            <br> <br> 
+            <h3 style="text-align: center;">Register for DeChatie</h3>
+            
+            <form action="/api/signup" method="POST" id="form-register">
+
+                <div class="form-group">  
+                    <label for="username" class="text-light">Username</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="username" id="username" value="" placeholder="Mark Stoenis">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-light">Email</label>
+                    <input type="email" name="email" id="email" value="" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="text-light">Password</label>
+                    <input type="password" name="password" id="password" value="" placeholder="****">
+                </div>
+                <div class="form-group">
+                    <label for="confirmpassword" class="text-light">Confirm Password</label>
+                    <input type="password" name="confirmpassword" id="password1" value="" placeholder="****">
+                </div>
+                 <br>
+        
+                <div class="form-group">
+                    <button type="submit" id="save" class="btn text-dark update">Save</button>
+                </div>
+
+            </form>
+        </div>
+
+        
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

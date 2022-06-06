@@ -1,0 +1,236 @@
+:root{
+    --light-grey: #b7bfc4;
+    --mainColor: #5b5c5c;
+    --white: #ffffff;
+    --mainText: aqua;
+    --light-blue: #001d48a9;
+    --dark-grey: rgb(1, 1, 62);
+
+    --font-text: "Poppins", sans-serif;
+    --font-heading: 'Baloo 2', calibri;
+    --fsize: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+body{
+    background-color: var(--mainColor);
+    height: 100%;
+}
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    display: inline;
+    color: var(--mainText);
+}
+a {
+    text-decoration: none;
+    color: var(--mainText);
+}
+li a:hover {
+    color: var(--light-blue);
+    background-color: var(--mainText);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 4px;
+}
+main header {
+    background-color: var(--light-blue);
+    color: var(--white);
+    padding: 7px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+main header .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title h1 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    margin-left: 10px;
+}
+header button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: none;
+}
+.container {
+    background-color: var(--light-grey);
+    padding: 20px; 
+    padding-bottom: 10px; 
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    max-height: 80vh;
+}
+.users-window {
+    width: 350px;
+    color: var(--white);
+    background-color: var(--dark-grey);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.users-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.users-head  h4 {
+    background-color: var(--mainText);
+    color: var(--dark-grey);
+    padding: 0 8px;
+    border-radius: 50px;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.users-list  span a {
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    padding: 0 8px;
+    border-radius: 50px;
+
+}
+.users-list span a:hover {
+    color: var(--mainText);
+}
+.users-list p{            
+    font-size: 0.9rem;
+    letter-spacing: 0.9px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.users-list a {
+    color: var(--light-grey);
+}
+.users-list a:hover {
+    color: var(--mainText);
+}
+.chat-window {
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--dark-grey);
+    overflow-y: scroll;
+}
+.chats {
+    min-height: 65vh;
+    padding: 20px;
+}
+.user-join {
+    font-size: 0.9rem;
+    color: var(--dark-grey);
+    background-color: var(--white);
+    border-radius: 50px;
+    width: max-content;
+    padding: 7px 20px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    scroll-behavior: unset;
+}
+.message {
+    color: var(--dark-grey);
+    background-color: var(--white);
+    padding: 5px 15px;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border-radius: 10px 50px 50px 10px;
+}
+.message p {
+    font-size: var(--fsize);
+}
+.outgoing { 
+    margin-left: auto;
+    color: var(--dark-grey);
+    background-color: var(--mainText);
+    border-radius: 50px 10px 10px 50px;
+    text-align: right;
+}
+
+
+.user-input {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 20px;
+}
+.user-input input {
+    font-size: var(--fsize);
+    background-color: var(--white);
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 50px 0 0 50px;
+}
+.user-input button {
+    font-size: var(--fsize);
+    font-weight: 600;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    letter-spacing: 0.5px;
+    color: var(--dark-grey);
+    background-color: var(--mainText);
+    border-radius: 0 50px 50px 0;
+}
+
+
+/* #people {
+    /* display: none; **/
+/*} */
+
+#room {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    main{
+    width: 95%;
+    }
+    header button {
+    display: block;
+    }
+    .container{
+    position: relative;
+    }
+    .container .users-window{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    height: max-content;
+    z-index: 11;
+    box-shadow: 0 15px 20px -20px black;
+    padding-bottom: 0;
+    display: none;
+    }
+    .message {
+    max-width: 300px;
+    }
+}
