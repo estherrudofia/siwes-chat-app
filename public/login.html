@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chat App</title>
+</head>
+<body>
+    
+    <div class="regs" > <!-- style="height: 100vh;" -->
+        <div class="header">
+            <h3>DeChatie</h3>
+        </div> <br> <br>
+
+        <div class="main">
+            <h4><a href="index.html"> << Home </a> </h4>
+            <br> <br> 
+            <h3 style="text-align: center;">Your login details</h3>
+
+            <form action="app.html">
+                <div class="form-group">
+                    <label for="username" class="text-light">Username</label>
+                    <input type="text" name="username" id="username" value="" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="text-light">Password</label>
+                    <input type="text" name="password" id="password" value="" placeholder="*********">
+                </div>
+                <div class="form-group">
+                    <label for="rooms">Rooms</label>
+                    <select name="Rooms" id="">
+                        <option value="front-end">FrontEnd</option>
+                        <option value="ui-ux">UI/UX Designers</option>
+                        <option value="webDevelopment">Web Development</option>
+                        <option value="graphicDesign">Graphic Design</option>
+                        <option value="javascript">Javascript Developers</option>
+                        <option value="python">Python Developers</option>
+                    </select>
+                </div>
+                 <br>
+        
+                <div class="form-group">
+                    <button type="submit" id="submit" class="btn text-dark">Join Chat</button>
+                </div>
+                <div class="form-group" action="register.html">
+                    <button type="submit" id="register" class="btn text-dark ">Register</button>
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

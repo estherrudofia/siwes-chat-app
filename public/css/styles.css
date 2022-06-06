@@ -1,0 +1,121 @@
+:root {
+    --mainColor: rgb(1, 1, 62);
+    --mainText: aqua;
+    --secondaryText: aquamarine;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.sections {
+    display: flex;
+}
+
+.nav {
+    width: 19em;
+    height: 100vh;
+    background-color: beige;
+}
+
+.s2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.s3 {
+    padding: 10px;
+}
+
+.top {
+    display: flex;
+}
+
+.top #createRoom {
+    margin-right: 1em;
+}
+
+
+.input-icons i {
+    position: absolute;
+}
+ 
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+ 
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+ 
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.s4 {
+    padding: 10px;
+}
+
+.s4 ul {
+    list-style-type: none;
+}
+
+.s4 a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.s4 li {
+    padding: 7px;
+}
+
+.body {
+    width: 50em;
+    background-color: blanchedalmond;
+}
+
+#chatImg {
+    animation-name: stretch;
+    animation-duration: 5.0s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running; 
+        /* animation: 
+          stretch
+          5.0s
+          ease-out
+          0s
+          alternate
+          infinite
+          none
+          running; */
+}
+
+@keyframes stretch {
+    0% {
+      transform: scale(.3);
+      border-radius: 30%;
+    }
+    50% {
+      /* background-color: orange; */
+    }
+    100% {
+      transform: scale(1.0);
+    }
+  }

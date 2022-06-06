@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+
+    <link rel="stylesheet" href="../css/app.css">
+
+</head>
+<body>
+
+
+    <main>
+        <header>
+            <div class="title">
+                <h1>DeChatie</h1>
+            </div>
+            <ul>
+                <li class="one"><a href="#people">Users</a> </li>
+                <li class="two"><a href="#room">Room</a> </li>
+                <li><a href="/api/logout" method>Leave</a> </li>
+            </ul>
+            <button type="button" onclick="show_hide()">
+                <p style="color: white;">Menu</p>
+            </button>
+        </header>
+        <div class="container">
+            <div class="users-window" id="people">
+                <div class="users-head">
+                    <h3><a href="#">Users</a></h3>
+                    <h4 class="count"></h4>
+                </div>
+                <div id="users-list">
+                    <!-- <ul id="users"></ul> -->
+                    <!-- <p><a href="#"> Jarvis</a></p>
+                    <p><a href="#">Ultron</a> </p>
+                    <p><a href="#">Veronica</a></p> -->
+                </div>
+            </div>
+            <div class="users-window" id="room">
+                <div class="users-head">
+                    <h3><a href="#">Room</a></h3>
+                    
+                    <h4 class="count"></h4>
+                </div>
+                <div class="rooms-list">
+                    <h2 id="room-name"></h2>
+                    <ul id=" roomName"></ul>
+                    <!-- <p class="list"><a href="#">FrontEnd</a>  </p> <span class="join"><a href="#">+</a></span>
+                    <p class="list"><a href="#">UI/UX Designers</a></p>
+                    <p class="list"><a href="#">Web Development</a></p>
+                    <p class="list"><a href="#">Graphic Design</a></p>
+                    <p class="list"><a href="#">Javascript Developers </a></p>
+                    <p class="list"><a href="#">Python Developers</a></p> -->
+                </div>
+            </div> 
+            <div class="chat-window">
+                <div class="chats">
+                    <!-- <div class="user-join">
+                        <p><b id="use">Jarvis</b> joined the chat</p>
+                    </div> -->
+                    <!-- <div class="message incoming">
+                        <h5  class="meta">Jarvis <span>9:12pm</span> </h5>
+                        <p class="text">Hello Ultron</p>
+                    </div>
+                    <div class="message outgoing">
+                        <h5  class="name">Veronica</h5>
+                        <p class="text">Welcome Jarvis</p>
+                    </div> -->
+                </div>
+                <form id="chat-form">
+                    <div class="user-input">
+                        <input type="text" id="msg" placeholder="Type your message...">
+                        <button>Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/qs.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js" integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="../js/socket.io.js"></script>
+    <script src="../js/clients.js"></script>
+
+</body>
+</html>
